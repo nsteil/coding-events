@@ -31,8 +31,9 @@ public class EventData {
         events.remove(id);
     }
 
-    public static void edit(int id, String newName, String newDescription){
+    public static void edit(int id, String newName, String newDescription, String newEmail){
         getById(id).setName(newName);
         getById(id).setDescription(newDescription);
+        getById(id).setContactEmail(newEmail);
     }
 }
