@@ -29,14 +29,17 @@ public class Event {
     @Min(value = 1,message = "Value must be greater than zero!")
     private int numberOfAttendees;
 
+    private EventType type;
+
     public Event(String name, String description, String contactEmail, String location,
-                 boolean registrationRequired, int numberOfAttendees) {
+                 boolean registrationRequired, int numberOfAttendees, EventType type) {
         this.name = name;
         this.description = description;
         this.contactEmail = contactEmail;
         this.location = location;
         this.registrationRequired = registrationRequired;
         this.numberOfAttendees = numberOfAttendees;
+        this.type = type;
         this.id = nextId;
         nextId++;
     }
@@ -96,6 +99,14 @@ public class Event {
 
     public void setNumberOfAttendees(int numberOfAttendees) {
         this.numberOfAttendees = numberOfAttendees;
+    }
+
+    public EventType getType() {
+        return type;
+    }
+
+    public void setType(EventType type) {
+        this.type = type;
     }
 
     @Override
