@@ -15,7 +15,7 @@
             <th>Location</th>
             <th>Is Registration Required</th>
             <th>Number of Attendees</th>
-            <th>Type</th>
+            <th>Category</th>
             <th></th>
         </tr>
     </thead>
@@ -27,7 +27,7 @@
         <td th:text="${event.location}"></td>
         <td th:text="${event.registrationRequired}"></td>
         <td th:text="${event.numberOfAttendees}"></td>
-        <td th:text="${event.type.displayName}"></td>
+        <td th:text="${event.eventCategory.name}"></td>
         <td><a class="nav-item" th:href="@{/events/edit/{id}(id=${event.id})}">Edit</a></td>
     </tr>
 </table>
