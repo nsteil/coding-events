@@ -34,10 +34,5 @@ public class EventData {
     public static void edit(int id, String newName, String newDescription, String newEmail,
                             String newLocation, boolean newRequired, int newAttendees){
         getById(id).setName(newName);
-        getById(id).setDescription(newDescription);
-        getById(id).setContactEmail(newEmail);
-        getById(id).setLocation(newLocation);
-        getById(id).setRegistrationRequired(newRequired);
-        getById(id).setNumberOfAttendees(newAttendees);
     }
 }

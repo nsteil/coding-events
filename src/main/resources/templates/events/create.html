@@ -14,32 +14,14 @@
     </div>
     <div class="form-group">
         <label>Description
-            <input th:field="${event.description}" class="form-control">
-            <p class="error" th:errors="${event.description}"></p>
+            <input th:field="${event.eventDetails.description}" class="form-control">
+            <p class="error" th:errors="${event.eventDetails.description}"></p>
         </label>
     </div>
     <div class="form-group">
         <label>Contact Email
-            <input th:field="${event.contactEmail}" class="form-control">
-            <p class="error" th:errors="${event.contactEmail}"></p>
-        </label>
-    </div>
-    <div class="form-group">
-        <label>Location
-            <input th:field="${event.location}" class="form-control">
-            <p class="error" th:errors="${event.location}"></p>
-        </label>
-    </div>
-    <div class="form-group">
-        <label>Should registration be required?
-            <input th:field="${event.registrationRequired}" class="form-control">
-            <p class="error" th:errors="${event.registrationRequired}"></p>
-        </label>
-    </div>
-    <div class="form-group">
-        <label>Number of Attendees
-            <input th:field="${event.numberOfAttendees}" class="form-control">
-            <p class="error" th:errors="${event.numberOfAttendees}"></p>
+            <input th:field="${event.eventDetails.contactEmail}" class="form-control">
+            <p class="error" th:errors="${event.eventDetails.contactEmail}"></p>
         </label>
     </div>
     <div class="form-group">
